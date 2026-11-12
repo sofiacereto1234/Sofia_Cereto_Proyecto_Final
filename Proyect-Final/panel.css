@@ -1,0 +1,139 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #250b38;
+    font-family: Arial, sans-serif;
+    color: #acacac;
+}
+
+/* ENCABEZADO */
+
+#encabezado {
+    width: 100%;
+    height: 100px;
+    background-color: #4d3b9f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+#encabezado h1 {
+    color: white;
+    font-family: Impact, sans-serif;
+    letter-spacing: 2px;
+}
+
+/* CONTENEDOR */
+
+#panel {
+    width: 90%;
+    margin: 40px auto;
+    background-color: #392989;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+/* BIENVENIDA */
+
+.bienvenida {
+    background-color: #985DC7;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.bienvenida h2 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* TITULOS */
+
+.titulo {
+    color: white;
+    margin: 30px 0 20px;
+    font-family: Impact, sans-serif;
+    letter-spacing: 2px;
+}
+
+/* CAJAS */
+
+.cajas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.caja {
+    background-color: #985DC7;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+}
+
+.caja h3 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.caja p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* BOTONES */
+
+.btn {
+    display: inline-block;
+    background-color: #7b3fb0;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-family: Impact, sans-serif;
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    background-color: #5F278B;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #5F278B;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* ADAPTACION A CELULARES */
+
+@media (max-width: 700px) {
+    #encabezado {
+        padding: 15px;
+        height: auto;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    #encabezado h1 {
+        font-size: 20px;
+    }
+
+    .cajas {
+        grid-template-columns: 1fr;
+    }
+
+    #panel {
+        width: 95%;
+        padding: 15px;
+    }
+}
